@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetarium Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Planetarium</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- Home Section -->
+    <div id="home" class="container mt-5 pt-5">
+        <h1>Welcome to the Planetarium</h1>
+        <p>Discover the wonders of the universe and explore the mysteries of the cosmos.</p>
+    </div>
+
+
+    <div class="image-divider" style="background-image: url('planet1.jpg');"></div>
+
+    <!-- About Section -->
+    <div id="about" class="container mt-4">
+        <h2>About Us</h2>
+        <p class="text-justify">
+            Here at The Planetarium, you can discover the mysteries and wonders of space. Whether it's exploring our own solar system or astral bodies in far away galaxies, you can find all that and more here. The Planetarium is the perfect place to visit for people of all ages. Kids will love the adventure of exploring outer space, awakening the inner astronaut within them. There is endless adventure and fun when you come down to The Planetarium.
+        </p>
+    </div>
+
+    <div class="image-divider" style="background-image: url('planet2.jpg');"></div>
+
+    <!-- Events Section -->
+    <div id="events" class="container mt-4">
+        <h2>Book an Event</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="eventDate">Event Date</label>
+                <input type="date" class="form-control" id="eventDate">
+            </div>
+            <div class="form-group">
+                <label for="eventType">Event Type</label>
+                <select class="form-control" id="eventType">
+                    <option>Classroom Event</option>
+                    <option>Holiday Party</option>
+                    <option>Work Event</option>
+                    <option>Family Party</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="image-divider" style="background-image: url('planet3.jpg');"></div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="footer bg-dark text-center text-white mt-4 py-3">
+        <p>Contact us on social media</p>
+        <a href="https://www.facebook.com" class="btn btn-outline-light btn-social mx-1">
+            <img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.twitter.com" class="btn btn-outline-light btn-social mx-1">
+            <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.youtube.com" class="btn btn-outline-light btn-social mx-1">
+            <img src="youtube.png" alt="YouTube" style="width: 24px; height: 24px;">
+        </a>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
